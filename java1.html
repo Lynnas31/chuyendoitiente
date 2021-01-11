@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chuyendoitiente</title>
+</head>
+<body>
+<form>
+    <input type="num" id ="sotien">
+    <select id="From">
+        <option  value="23200" >VietNam</option>
+        <option  value="1" > MY</option>
+        <option  value="1088   ">Han Quoc </option>
+        <option  value="104">Nhat Ban </option>
+    </select>
+    <select id="to">
+        <option  value="23200" >VietNam</option>
+        <option  value="1" > MY</option>
+        <option  value="1088   ">Han Quoc </option>
+        <option  value="104">Nhat Ban </option>
+    </select>
+    <button type="button" onclick="convert();" >convert</button>
+</form>
+</body>
+<script>
+    function  convert (){
+
+    let a;
+    a= document.getElementById("sotien").value;
+    let from;
+    from = document.getElementById("From").value ;
+    let to;
+    to = document.getElementById("to").value;
+    let b
+    b= (a*to)/from;
+    alert(" so tien quy doi la" + b )
+    }
+
+</script>
+</html>
